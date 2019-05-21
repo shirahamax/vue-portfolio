@@ -30,7 +30,7 @@
         <!-- ロゴ -->
         <v-flex>
           <router-link to="/" class="hidden-xs-only mr-4">
-            <v-toolbar-title class="black--text">mercari</v-toolbar-title>
+            <v-toolbar-title class="black--text">shirahamax</v-toolbar-title>
           </router-link>
         </v-flex>
 
@@ -62,9 +62,7 @@
 
       <!-- 共有フッター -->
       <v-footer v-if="!hiddenFooter" class="grey darken-4" dark height="50px">
-        <img src="./assets/img/footer-logo.png" height="20px" class="ma-2" />
-        <div>&copy; {{ new Date().getFullYear() }} Mercari</div>
-        <v-spacer></v-spacer>
+        <v-layout justify-center><span class="white--text">&copy;{{ new Date().getFullYear() }} shirahamax</span></v-layout>
       </v-footer>
     </v-app>
   </div>
