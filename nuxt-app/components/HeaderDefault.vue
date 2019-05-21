@@ -25,7 +25,7 @@
       <!-- ロゴ -->
       <v-flex>
         <router-link to="/" class="hidden-xs-only mr-4">
-          <v-toolbar-title class="black--text">mercari</v-toolbar-title>
+          <v-toolbar-title class="black--text">shirahamax</v-toolbar-title>
         </router-link>
       </v-flex>
 
