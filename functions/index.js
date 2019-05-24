@@ -6,10 +6,8 @@ const app = express();
 const cors = require('cors');
 const HOSTING_URL = ['https://shirahamax-portfolio.web.app/', 'http://localhost:8080']
 app.use(cors({
-    origin: HOSTING_URL
-  } // 指定したhostのみ許可
-  // true
-));
+  origin: HOSTING_URL // 指定したhostのみ許可
+}));
 
 // 共通の処理：クライアントの制限（直接開けないようにする）
 app.use((req, res, next) => {
@@ -20,10 +18,9 @@ app.use((req, res, next) => {
   next();
 });
 
-// データ
+// 返却データ
 const items = require('./data/all.json')
 const categories = require('./data/categories.json')
-
 
 /* URLの定義・export  */
 app.get('/items', getItems);
