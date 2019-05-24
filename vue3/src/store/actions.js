@@ -1,7 +1,7 @@
 import axios from 'axios'
 import router from '../router'
 
-let host = 'http://localhost:5000/'
+let host = 'http://localhost:5000/shirahamax-portfolio/us-central1/shop/'
 
 export default {
 
