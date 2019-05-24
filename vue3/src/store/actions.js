@@ -1,7 +1,7 @@
 import axios from 'axios'
 import router from '../router'
 
-let host = 'http://localhost:5000/shirahamax-portfolio/us-central1/shop/'
+let host = 'https://asia-northeast1-shirahamax-portfolio.cloudfunctions.net/shop'
 
 export default {
 
@@ -42,7 +42,7 @@ export default {
    */
   async getCategories ({ commit }) {
     await axios
-      .get(host + 'categories')
+      .get(host + '/categories')
       .then(response => {
         commit('SET_CATEGORIES', response.data.data)
       })
@@ -55,7 +55,7 @@ export default {
    */
   async getItems ({ commit }) {
     await axios
-      .get(host + 'items')
+      .get(host + '/items')
       .then(response => {
         commit('SET_ITEMS', response.data.data)
       })
@@ -73,7 +73,7 @@ export default {
 
     // 商品詳細の取得
     await axios
-      .get(host + 'items/' + itemId)
+      .get(host + '/items/' + itemId)
       .then(response => {
         detail = response.data
       })

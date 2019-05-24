@@ -4,7 +4,7 @@ const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const HOSTING_URL = ['https://shirahamax-portfolio.web.app/', 'http://localhost:8080']
+const HOSTING_URL = ['https://shirahamax-portfolio.web.app', 'https://shirahamax-portfolio.firebaseapp.com','http://localhost:8080']
 app.use(cors({
   origin: HOSTING_URL // 指定したhostのみ許可
 }));
@@ -44,7 +44,7 @@ function getItemDetail(req, res) {
   const itemId = req.params.id;
   const itemArr = items.data
   const item = itemArr.filter((item) => {
-    return item.id == itemId
+    return item.id === itemId
   })
   res.status(200).send(item[0]);
   return;
