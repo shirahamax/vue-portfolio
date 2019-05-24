@@ -3,7 +3,7 @@
     <v-app app>
 
       <!-- ナビゲーションメニュー -->
-      <v-navigation-drawer fixed clipped app v-model="drawer" width="200px">
+      <v-navigation-drawer fixed clipped app v-model="drawer" width="230px">
         <navigation-list></navigation-list>
       </v-navigation-drawer>
 

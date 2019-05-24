@@ -31,12 +31,12 @@ export default {
       flag: true,
       items: [
         {
-          headline: '商品が発送されました。',
-          subtitle: '内容を確認して、受取評価をしてください。'
+          headline: '年齢確認が終わりました。',
+          subtitle: '出品することができます。早速出品してみましょう。'
         },
         {
-          headline: '商品の取引メッセージがあります。',
-          subtitle: '返信をお願いします。'
+          headline: 'クレジットカードの登録',
+          subtitle: '商品を購入するには、こちらのリンクからクレジットカードの登録をお願いします。'
         }
       ]
     }
