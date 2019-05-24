@@ -26,3 +26,4 @@ firebase-debug.log
 
 # private files
 api-server
+functions/data/*
